@@ -47,6 +47,4 @@ io.on ('connection', ( socket ) =>{
 });
 
 //EL SERVIDOR FUNCIONANDO EN EL PUERTO 3000
-const server = app.listen(PORT, () => console.log(`Servidor OK en puertO : ${PORT} `));  // INICIO LA APLICACION
-
-server.on('error', error => console.log(`Error en servidor: ${error}`));
+const server = httpServer.listen(PORT, () => console.log(`Servidor OK en puertO : ${PORT} `));  // INICIO LA APLICACION
