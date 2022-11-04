@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <script src="/socket.io/socket.io.js" ></script>  <!--DEL LADO DEL CLIENTE  -->
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>DESAFIO SOCKET</h1>
+    <div class="estilo-formulario">    
+        <form id="form" onsubmit="return AgregarAtabla(this)"  method="">
+                <div class="form-group">
+                    <label for="titulo">Titulo</label>
+                    <input type="text" class="form-control" id="titulo" name="nombre_del_producto" placeholder="Titulo">
+                </div>
+                <div class="form-group">
+                    <label for="precio">Precio</label>
+                    <input type="number" class="form-control" id="precio" name="precio" placeholder="Precio">
+                </div>
+                <div class="form-group">
+                    <label for="foto">Foto</label>
+                    <input type="image" class="form-control" id="foto" name="imagen" placeholder="Foto">
+                </div>
+                <br>
+                <div class="form-group">
+                    <button id="btnSend" type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+                <!-- <a href="http://localhost:8080/productos" class="btn" >
+                    <button onclick="" type="submit" class="btn btn-primary">Enviar</button>
+                </a>   -->
+        </form>
+    </div>
+
+    <table id="productosRecibidos"></table>
+
+    <form onsubmit= "addMessage(this)">
+        <p>Centro de Mensajes</p>
+        <input type="email"  id="email" placeholder="Ingrese su Mail" required>
+        <input type="text" id="mensaje" placeholder="Ingrese su Mensaje">
+        <input type="submit" value="Enviar" id="enviar">
+    </form>
+
+    <div id="mensajesrecibidos" ></div>
+    
+
+
+</body>
+
+<script src="/main.js" ></script> <!--DEL LADO DEL SERVIDOR  -->
+
+</html>

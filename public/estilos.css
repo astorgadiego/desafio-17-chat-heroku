@@ -1,0 +1,70 @@
+body{
+    background-color: rgb(214, 194, 214);
+}
+
+.clase{
+        color: red;
+        text-align: center;
+        font-style: italic;
+    
+}
+.form-group{
+    text-align: center;
+}
+
+.estilo-formulario{
+    margin-left: 10rem;
+    margin-right: 10rem;    
+}
+
+#form{
+    background-color: rgb(84, 211, 211);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form label {
+    text-transform: uppercase;
+    color: rgb(14, 22, 6);
+}
+
+table, td, tr { 
+    
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    color: red;
+        text-align: center;
+        font-style: italic;
+}
+
+.tablaVacia{
+        color: red;
+        text-align: center;
+        font-style: italic;
+}
+
+.email{
+    color: blue;
+}
+
+.mensaje{
+    color: green;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 125%;
+}
+.hora{
+    font-weight: bold;
+    color: brown;
+    text-transform: uppercase;
+}
